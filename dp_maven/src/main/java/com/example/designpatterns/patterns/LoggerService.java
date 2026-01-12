@@ -9,6 +9,10 @@ public class LoggerService {
 
     private static LoggerService instance;
 
+    private LoggerService() {
+        // private constructor to prevent external instantiation
+    }
+
     public static LoggerService getInstance() {
         if (instance == null) {
             instance = new LoggerService();
